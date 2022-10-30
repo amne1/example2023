@@ -1,12 +1,20 @@
 public class ThreadCheckArray implements Runnable 
 {
-	//hey
+	/**
+	 * array is the array of numbers
+	 * winArray is the array of successful tries of the threads
+	 * flag is the flag for knowing if the sum is found
+	 * b is the wanted number to check
+	 */
 	private boolean flag;
 	private boolean [] winArray;
 	SharedData sd;
 	int[] array;
 	int b;
 	
+	/**
+	 * @param sd 
+	 */
 	public ThreadCheckArray(SharedData sd) 
 	{
 		this.sd = sd;	
